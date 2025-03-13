@@ -1,9 +1,10 @@
 .card {
+  color: #fff !important;
   border-radius: 12px;
   width: 250px;
-  height: 170px;
-  background-color: #fff;
-  box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25);
+  height: 250px;
+  background-color: rgb(30, 28, 61);
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
   position: relative;
 }
 
@@ -16,7 +17,6 @@
   padding: 5px 10px 20px 10px;
   text-align: center;
   border-radius: 12px;
-  color: #fff;
   z-index: -1;
   font-size: 0.7rem;
 }
@@ -35,5 +35,4 @@
 
 .card-description {
   font-size: 0.8rem;
-  color: rgba(0, 0, 0, 0.5);
 }

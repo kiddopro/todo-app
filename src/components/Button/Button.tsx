@@ -7,9 +7,7 @@ interface ButtonProps {
 
 function Button({ ...props }: ButtonProps) {
   const { label, btnClass } = props;
-  return (
-    <button className={btnClass ? btnClass : "button-primary"}>{label}</button>
-  );
+  return <button className={btnClass}>{label}</button>;
 }
 
 export default Button;

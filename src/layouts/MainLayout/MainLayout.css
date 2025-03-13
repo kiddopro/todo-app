@@ -31,3 +31,9 @@
 .header-content h1 {
   color: blue;
 }
+
+.main-body {
+  width: 100%;
+  height: inherit;
+  background-color: #13112b;
+}

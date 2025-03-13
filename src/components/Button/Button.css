@@ -1,22 +1,16 @@
 .button-primary {
   width: 250px;
-  height: 170px;
+  height: 250px;
   position: relative;
   border-radius: 12px;
-  background-color: rgba(0, 0, 0, 0.03);
-  border: 2px dashed rgba(0, 0, 0, 0.2);
-  color: rgba(0, 0, 0, 0.25);
+  background-color: transparent;
+  border: 2px dashed rgba(255, 255, 255, 0.45);
   cursor: pointer;
+  color: rgba(255, 255, 255, 0.45);
+  transition: all 0.2s ease-in-out;
 }
 
 .button-primary:hover {
-  border: 2px dashed rgba(0, 0, 0, 0.35);
-  color: rgba(0, 0, 0, 0.45);
-}
-
-.button-edit {
-  width: fit-content;
-  background: none;
-  border: none;
-  cursor: pointer;
+  border: 2px dashed rgba(255, 255, 255, 0.75);
+  color: rgba(255, 255, 255, 0.75);
 }

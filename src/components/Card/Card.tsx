@@ -9,7 +9,7 @@ function Card({ ...props }: Task) {
     <div className="card" key={id}>
       <span
         style={{
-          backgroundColor: done ? "green" : "red",
+          backgroundColor: done ? "rgb(105, 145, 72)" : "rgba(143, 52, 52)",
         }}
       >
         {done ? "completed" : "pending"}
