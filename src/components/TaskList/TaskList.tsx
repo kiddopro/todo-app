@@ -8,7 +8,7 @@ function TaskList() {
         {mockTasks.map((task) => (
           <Card key={task.id} {...task} />
         ))}
-        <Button btnClass="button-primary" label="Add new Task" />
+        <Button btnClass="button-primary">Add new Task</Button>
       </div>
     </main>
   );

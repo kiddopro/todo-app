@@ -1,13 +1,14 @@
+import { ReactNode } from "react";
 import "./Button.css";
 
 interface ButtonProps {
-  label: string;
+  children: ReactNode;
   btnClass?: string;
 }
 
 function Button({ ...props }: ButtonProps) {
-  const { label, btnClass } = props;
-  return <button className={btnClass}>{label}</button>;
+  const { children, btnClass } = props;
+  return <button className={btnClass}>{children}</button>;
 }
 
 export default Button;

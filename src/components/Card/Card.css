@@ -23,8 +23,11 @@
 
 .card-content {
   display: flex;
+  height: 100%;
   flex-direction: column;
-  padding: 10px;
+  align-items: center;
+  text-wrap: wrap;
+  justify-content: space-between;
 }
 
 .card-title {
@@ -34,5 +37,33 @@
 }
 
 .card-description {
+  max-width: 100%;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
   font-size: 0.8rem;
+  overflow-y: auto;
+}
+
+.card .button-edit,
+.button-delete {
+  font-size: 1rem;
+  color: white;
+  filter: drop-shadow(1px 1px 1px rgba(255, 255, 255, 1));
+  width: fit-content;
+  background: transparent;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+.card .button-edit:hover,
+.card .button-delete:hover {
+  scale: 1.1;
+}
+
+.card .card-footer {
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
 }
