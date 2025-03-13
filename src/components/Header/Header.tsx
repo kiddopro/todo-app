@@ -3,11 +3,11 @@ import "./Header.css";
 
 interface HeaderProps {
   children: ReactNode;
-  className?: string;
+  headerClass?: string;
 }
 
-function Header({ children, className }: HeaderProps) {
-  return <header className={className}>{children}</header>;
+function Header({ children, headerClass }: HeaderProps) {
+  return <header className={headerClass}>{children}</header>;
 }
 
 export default Header;

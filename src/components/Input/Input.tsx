@@ -5,12 +5,13 @@ type InputType = "text" | "checkbox" | "search" | null;
 interface InputProps {
   placeholder?: string;
   type?: InputType;
+  inputClass?: string;
 }
 
-export function Input({ placeholder, type }: InputProps) {
+export function Input({ placeholder, type, inputClass }: InputProps) {
   return (
     <>
-      <input type={type!} placeholder={placeholder} />
+      <input className={inputClass} type={type!} placeholder={placeholder} />
     </>
   );
 }

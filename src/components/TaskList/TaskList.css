@@ -1,9 +1,11 @@
 .container {
+  align-items: center;
+  justify-content: center;
   display: flex;
   flex-direction: row;
   gap: 20px;
   flex-wrap: wrap;
-  margin: 100px 20px 0 20px;
+  margin-top: 70px;
   position: relative;
   z-index: 1;
 }

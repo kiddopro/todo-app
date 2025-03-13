@@ -6,9 +6,12 @@ function MainLayout() {
     <div className="main-layout">
       <Sidebar />
       <div className="main-body">
-        <Header className="header-content">
-          <h1>Todo App</h1>
-          <Input placeholder="Search" type="search" />
+        <Header headerClass="header-content">
+          <Input
+            inputClass="header-search-input"
+            placeholder="Search"
+            type="search"
+          />
         </Header>
         <TaskList />
       </div>

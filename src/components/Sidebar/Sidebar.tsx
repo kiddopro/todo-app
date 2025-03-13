@@ -4,7 +4,7 @@ import "./Sidebar.css";
 function Sidebar() {
   return (
     <aside className="aside-content">
-      <Header className="header-sidebar">
+      <Header headerClass="header-sidebar">
         <h2>Todo App</h2>
       </Header>
       <div>
