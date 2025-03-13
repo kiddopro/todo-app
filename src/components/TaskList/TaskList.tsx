@@ -1,5 +1,7 @@
 import "./TaskList.css";
 
-function TaskList() {}
+function TaskList() {
+  return <main>TaskList</main>;
+}
 
 export default TaskList;
