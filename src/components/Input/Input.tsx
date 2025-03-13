@@ -1,18 +1,16 @@
 import "./Input.css";
 
-type InputType = "text" | "checkbox" | null;
+type InputType = "text" | "checkbox" | "search" | null;
 
 interface InputProps {
   placeholder?: string;
   type?: InputType;
 }
 
-function Input({ placeholder, type }: InputProps) {
+export function Input({ placeholder, type }: InputProps) {
   return (
     <>
       <input type={type!} placeholder={placeholder} />
     </>
   );
 }
-
-export default Input;

@@ -1,3 +1,32 @@
 .aside-content {
   background-color: darkslategray;
 }
+
+.header-sidebar h2 {
+  margin-top: 20px;
+  color: #fff;
+  text-align: center;
+}
+
+.aside-content div {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.aside-content div a {
+  color: #fff;
+  text-decoration: none;
+  text-indent: 20px;
+  padding: 5px;
+}
+
+a.active {
+  background-color: rgba(114, 174, 174, 0.1) !important;
+  border-right: 4px solid #fff;
+}
+
+a:hover {
+  background-color: rgba(114, 174, 174, 0.1);
+}
