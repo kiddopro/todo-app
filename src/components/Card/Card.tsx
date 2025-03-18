@@ -1,6 +1,6 @@
 import "./Card.css";
 import { Task } from "../../models";
-import { Button } from "../index";
+import { Button } from "..";
 
 function Card({ ...props }: Task) {
   const { id, title, description, done } = props;

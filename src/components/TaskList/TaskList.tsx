@@ -1,9 +1,13 @@
 import "./TaskList.css";
-import { mockTasks } from "../../data";
 import { Button, Card, Modal } from "..";
 import { useRef } from "react";
+import { Task } from "../../models";
 
-function TaskList() {
+type TaskListProps = {
+  tasks: Task[];
+};
+
+function TaskList({ tasks }: TaskListProps) {
   const modalRef = useRef<HTMLDialogElement>(null);
 
   const handleClick = () => {
@@ -15,8 +19,8 @@ function TaskList() {
   return (
     <main>
       <div className="container">
-        {mockTasks.map((task) => (
-          <Card key={task.id} {...task} />
+        {tasks.map((t) => (
+          <Card key={t.id} {...t} />
         ))}
         <Modal modalRef={modalRef} />
         <Button
