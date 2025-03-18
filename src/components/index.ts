@@ -4,3 +4,4 @@ export { Input } from "./Input/Input";
 export { default as TaskList } from "./TaskList/TaskList";
 export { default as Sidebar } from "./Sidebar/Sidebar";
 export { default as Header } from "./Header/Header";
+export { default as Modal } from "./Modal/Modal";

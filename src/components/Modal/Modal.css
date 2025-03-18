@@ -1,0 +1,40 @@
+#dialog {
+  border: none;
+  border-radius: 12px;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#dialog .dialog-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+
+#dialog .dialog-content {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 20px;
+}
+
+#dialog .dialog-footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+#dialog .dialog-footer button {
+  border: none;
+  border-radius: 12px;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+#dialog::backdrop {
+  background-color: rgba(0, 0, 0, 0.5);
+}
