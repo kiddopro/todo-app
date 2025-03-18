@@ -17,8 +17,11 @@ function Card({ ...props }: Task) {
       <div className="card-content">
         <h2 className="card-title">{title}</h2>
         <p className="card-description">{description}</p>
-        <Button label="Delete" btnClass="button-edit" />
       </div>
+      <footer>
+        <Button label="Delete" btnClass="button-delete" />
+        <Button label="Edit" btnClass="button-edit" />
+      </footer>
     </div>
   );
 }
